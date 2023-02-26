@@ -349,8 +349,6 @@
         
         .navbar ul li a:hover {
             color: crimson;
-            border-right: 3px solid red;
-            border-left: 5px solid gold;
             border-radius: 50%;
             transition: .5s ease;
         }

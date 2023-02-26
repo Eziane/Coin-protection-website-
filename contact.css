@@ -244,21 +244,33 @@ body {
 /*contact form*/
 
 .contact-form {
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(216, 54, 202));
+    background-color: rgb(222, 230, 235);
     display: block;
-    width: 60%;
+    width: 40%;
     min-height: 60vh;
     position: relative;
-    margin: 80px 20%;
+    margin: auto;
+    margin-bottom: 40px;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 1rem;
     opacity: 1;
-    box-shadow: 2px 4px 10px black;
+    box-shadow: 2px 4px 2px black;
+    padding-bottom: 30px;
 }
 
 .contact-form:hover {
-    box-shadow: 2px 6px 20px black;
-    transition: 5s ease;
+    box-shadow: 2px 6px 30px black;
+    transition: 3s ease;
+}
+
+.gif {
+    position: absolute;
+    right: 0px;
+    top: 33px;
+}
+
+.gif img {
+    width: 70px;
 }
 
 #nom {
@@ -266,17 +278,22 @@ body {
     min-height: 40px;
     margin: 55px 15px 15px 15px;
     padding-left: 10px;
-    border: none;
-    border-radius: .5rem;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    border-right: none;
+    border-radius: 0rem;
     font-family: monospace;
     font-size: 16px;
+    background-color: transparent;
 }
 
 #nom:hover,
 #email:hover,
 #message:hover {
-    box-shadow: 3px 3px 5px gold;
+    box-shadow: 1px 2px 2px rgb(47, 0, 255);
     transition: .5s ease;
+    background-color: blanchedalmond;
 }
 
 #email {
@@ -284,11 +301,15 @@ body {
     min-height: 40px;
     margin: 15px;
     padding-left: 10px;
-    border: none;
-    border-radius: .5rem;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    border-right: none;
+    border-radius: 0rem;
     font-family: monospace;
     opacity: 1;
     font-size: 16px;
+    background-color: transparent;
 }
 
 #message {
@@ -297,12 +318,13 @@ body {
     height: 120px;
     margin: 20px;
     text-align: center;
-    border: none;
+    border: 2px double black;
     border-radius: .5rem;
     font-family: monospace;
     font-size: 16px;
     color: black;
     font-weight: bold;
+    background-color: transparent;
 }
 
 #btn {
@@ -319,90 +341,33 @@ body {
 }
 
 #btn:hover {
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(216, 54, 202));
     color: rgb(233, 233, 233);
     transition: 1.5s ease;
+    background-color: coral;
 }
 
 .retour {
-    padding: 20px 0;
+    padding: 20px;
     width: 100%;
 }
 
 .retour a {
     text-decoration: none;
-    color: gold;
-    font-size: 16px;
+    color: black;
+    font-size: 18px;
     font-weight: 900;
     font-family: monospace;
+    padding: 5px 20px;
 }
 
 .retour a:hover {
-    color: white;
+    color: blue;
+    border-bottom: 2px dotted blue;
 }
 
 .contact-hero {
     background-color: rgb(49, 49, 49);
     min-height: 100vh;
-}
-
-.thank-statement {
-    width: 100%;
-    margin: 13% 0;
-    text-align: center;
-}
-
-.thank-statement p {
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 60px;
-    color: lightseagreen;
-    font-family: 'Righteous', cursive;
-}
-
-.thank-statement p span a {
-    text-decoration: none;
-    color: lightcoral;
-}
-
-.thank-statement p a {
-    text-decoration: none;
-    color: lightseagreen;
-}
-
-#a,
-#e {
-    color: gold;
-    animation: message_colored 15s infinite;
-}
-
-#b,
-#d {
-    color: blue;
-    animation: message_colored 5s infinite;
-}
-
-#c {
-    color: red;
-    animation: message_colored 15s linear infinite;
-}
-
-@keyframes message_colored {
-    100% {
-        color: red;
-    }
-    25% {
-        color: darkcyan;
-    }
-    20% {
-        color: black;
-    }
-    10% {
-        color: blue;
-    }
-    0% {
-        color: gold;
-    }
 }
 
 @media screen and (max-width:600px) {
